@@ -23,11 +23,11 @@ class _PinPageState extends State<loginpage> {
         padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 0.0),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Colors.deepPurple,
 
             boxShadow: [
               BoxShadow(
-                color: Colors.deepPurple.shade300,
+                color: Colors.teal,
                 offset: Offset(5.0, 5.0),
                 spreadRadius: 2.0,
                 blurRadius: 5.0,
@@ -48,19 +48,19 @@ class _PinPageState extends State<loginpage> {
 
                       Icons.lock,         // รูปไอคอน
                       size: 50.0,           // ขนาดไอคอน
-                      color: Colors.pinkAccent.shade100,   // สีไอคอน
+                      color: Colors.blue,   // สีไอคอน
                     ),
                     Padding(
                       padding: const EdgeInsets.all(0.2),
 
                       child: Text("LOGIN",style: TextStyle(
-                          fontSize: 32.0, color: Colors.purple.shade200)),
+                          fontSize: 32.0, color: Colors.blue.shade200)),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(0.2),
 
                       child: Text("Enter pin to login",style: TextStyle(
-                          fontSize: 12.0, color: Colors.purple.shade200)),
+                          fontSize: 12.0, color: Colors.blue.shade200)),
                     ),
                   ],
                 ),
@@ -79,7 +79,7 @@ class _PinPageState extends State<loginpage> {
                         height: 25.0,
                         margin: EdgeInsets.all(5.0),
                         decoration: BoxDecoration(
-                          color: Colors.pinkAccent.shade100,
+                          color: Colors.teal.shade100,
                           shape: BoxShape.circle,
                         ),
                       ),
@@ -89,7 +89,7 @@ class _PinPageState extends State<loginpage> {
                         height: 25.0,
                         margin: EdgeInsets.all(5.0),
                         decoration: BoxDecoration(
-                          color: Colors.purple.shade200,
+                          color: Colors.blue.shade200,
                           shape: BoxShape.circle,
                         ),
                       ),
@@ -165,7 +165,7 @@ class _PinPageState extends State<loginpage> {
         decoration: BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
-            border: Border.all(color: Colors.purple.shade200, width: 2.0),
+            border: Border.all(color: Colors.teal.shade200, width: 2.0),
 
             boxShadow: [
               BoxShadow(
@@ -214,7 +214,7 @@ class _PinPageState extends State<loginpage> {
 
 
                       return AlertDialog(
-                        title: Text('รหัสผ่านผิดพลาด',style: TextStyle(color: Colors.pinkAccent,fontWeight: FontWeight.bold)),
+                        title: Text('รหัสผ่านผิดพลาด',style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold)),
                         content: Text(
                             'กรุณาลองใส่รหัสผ่านใหม่'),
                         actions: [
@@ -250,7 +250,7 @@ class _PinPageState extends State<loginpage> {
                     : BoxDecoration(
                   border: Border.all(width: 2.0),
                   shape: BoxShape.circle,
-                  color: Colors.pinkAccent.shade100,
+                  color: Colors.blue.shade200,
                 ),
                 alignment: Alignment.center,
                 width: loginpage.buttonSize,
@@ -274,7 +274,7 @@ class _PinPageState extends State<loginpage> {
                     else if(num==-1)
                       Icon(
                         Icons.backspace_outlined,
-                        color: Colors.pinkAccent.shade100,
+                        color: Colors.blue.shade200,
                         // รูปไอคอน
                         size: 20.0,
                       ),
